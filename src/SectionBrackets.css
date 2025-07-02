@@ -1,0 +1,134 @@
+.brackets-section {
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #ec4899, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+.bracket-box {
+  background: #e5e5e5;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.liga-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.liga-titulo {
+  color: #ec4899;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.match {
+  background: #000;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  font-size: 0.9rem;
+}
+
+.participante {
+  text-align: left;
+}
+
+.score {
+  background: #fff;
+  color: #000;
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.btn-popup {
+  margin-top: 30px;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  background:
+    linear-gradient(#e5e5e5, #e5e5e5) padding-box,
+    linear-gradient(to right, #ec4899, #3b82f6) border-box;
+  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+.flecha {
+  background-color: #ec4899;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+
+.tab {
+  font-weight: bold;
+  color: #ec4899;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.tab.active {
+  border-image: linear-gradient(to right, blue, #ec4899) 1;
+  border-bottom-width: 3px;
+  border-style: solid;
+}
+
+.bracket-box {
+  background: #e5e5e5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-popup {
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 999px;
+  background:
+    linear-gradient(#e5e5e5, #e5e5e5) padding-box,
+    linear-gradient(to right, #ec4899, #3b82f6) border-box;
+  border: 2px solid transparent;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
