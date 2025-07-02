@@ -14,7 +14,7 @@
       "twitch": "https://instagram.com/ded",
       "youtube": "https://instagram.com/ded"
     },
-    "foto": "public/imgs/Participants/Ded.png"
+    "foto": "./imgs/Participants/Ded.png"
   },
   {
     "nombre": "DED",
@@ -31,7 +31,7 @@
       "twitch": "https://instagram.com/ded",
       "youtube": "https://instagram.com/ded"
     },
-    "foto": "public/imgs/Participants/Ded.png"
+    "foto": "./imgs/Participants/Ded.png"
   },
   {
     "nombre": "DED",
@@ -48,7 +48,7 @@
       "twitch": "https://instagram.com/ded",
       "youtube": "https://instagram.com/ded"
     },
-    "foto": "public/imgs/Participants/Ded.png"
+    "foto": "./imgs/Participants/Ded.png"
   },
   {
     "nombre": "DED",
@@ -65,7 +65,7 @@
       "twitch": "https://instagram.com/ded",
       "youtube": "https://instagram.com/ded"
     },
-    "foto": "public/imgs/Participants/Ded.png"
+    "foto": "./imgs/Participants/Ded.png"
   },
   {
     "nombre": "DED",
@@ -82,7 +82,7 @@
       "twitch": "https://instagram.com/ded",
       "youtube": "https://instagram.com/ded"
     },
-    "foto": "public/imgs/Participants/Ded.png"
+    "foto": "./imgs/Participants/Ded.png"
   },
   {
     "nombre": "DED",
@@ -99,6 +99,6 @@
       "twitch": "https://instagram.com/ded",
       "youtube": "https://instagram.com/ded"
     },
-    "foto": "public/imgs/Participants/Ded.png"
+    "foto": "./imgs/Participants/Ded.png"
   }
 ]

@@ -27,7 +27,7 @@ const Section2 = () => {
       <div className="max-w-7xl mx-auto flex lg:flex-row items-center gap-12">
         {/* Imagen */}
         <div className="flex-1 flex justify-center">
-          <img src="/imgs/Home/Ambos.png" alt="Personajes" className="with70" />
+          <img src="./imgs/Home/Ambos.png" alt="Personajes" className="with70" />
         </div>
 
         {/* Texto */}

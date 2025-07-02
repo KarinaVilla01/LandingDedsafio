@@ -104,7 +104,7 @@ button:focus-visible {
 }
 
 .primeraSection {
-  background: url(/public/imgs/Home/Background1.png);
+  background: url(./imgs/Home/Background1.png);
 }
 
 .letras {
@@ -145,12 +145,12 @@ button:focus-visible {
 }
 
 #aboutEvent {
-  background: url(public/imgs/bg-top-shadow2.png);
+  background: url(./imgs/bg-top-shadow2.png);
   padding-bottom: 70px;
 }
 
 .contenedorConFondos {
-  background: url(public/imgs/FondoUltimosCuatro.png);
+  background: url(./imgs/FondoUltimosCuatro.png);
   padding-bottom: 70px;
   background-position-x: center;
   background-position-y: 30%;

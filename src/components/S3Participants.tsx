@@ -10,7 +10,7 @@ const Section3 = () => {
       <div className='cardParticipantsSection'>
         <div className='divParticipant'>
           <h2 className="titulo">PARTICIPANTES</h2>
-          <img className='degradadoImg' src="public/imgs/Participants/Degradado.png" alt="degradado" />
+          <img className='degradadoImg' src="./imgs/Participants/Degradado.png" alt="degradado" />
         </div>
 
         <div className="grid-participantes">
@@ -22,8 +22,11 @@ const Section3 = () => {
               <div className="redes">
                 {p.redes.map((r, j) => (
                   <a key={j} href={(p.links as Record<string, string>)[r]} target="_blank" rel="noopener noreferrer">
-                    <img 
-                    src={`public/imgs/Participants/${r}.svg`} alt={r} className="icon" />
+                    <img
+                      src={`./imgs/Participants/${r.charAt(0).toUpperCase() + r.slice(1)}.svg`}
+                      alt={r}
+                      className="icon"
+                    />
                   </a>
                 ))}
               </div>
