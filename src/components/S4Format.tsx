@@ -1,4 +1,3 @@
-import personajeImg from "/public/imgs/Formato/MegaBlaziken.png";
 
 const Section4 = () => {
 
@@ -7,7 +6,7 @@ const Section4 = () => {
             <div className="max-w-7xl mx-auto flex lg:flex-row items-center gap-12">
                 {/* Imagen */}
                 <div className="flex-1 flex justify-center">
-                    <img src={personajeImg} alt="Personajes" className="with70" />
+                    <img src="/imgs/Formato/MegaBlaziken.png" alt="Personajes" className="with70" />
                 </div>
 
                 {/* Texto */}

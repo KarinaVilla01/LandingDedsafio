@@ -36,7 +36,7 @@ const BracketsView: React.FC<BracketsViewProps> = ({ matches }) => {
       <SingleEliminationBracket
         matches={matches}
         matchComponent={Match}
-        svgWrapper={({ children, ...props }) => (
+        svgWrapper={({ children, ...props }: { children: React.ReactNode; [key: string]: any }) => (
           <SVGViewer width={800} height={500} {...props}>
             {children}
           </SVGViewer>

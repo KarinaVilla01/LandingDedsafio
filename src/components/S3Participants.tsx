@@ -3,7 +3,7 @@ import { useState } from 'react';
 import data from '../assets/participantes.json';
 
 const Section3 = () => {
-  const [participantes, setParticipantes] = useState(data);
+  const [participantes] = useState(data);
 
   return (
     <section id="participants" className="section3">
@@ -21,7 +21,7 @@ const Section3 = () => {
               <p className="card-desc">{p.descripcion}</p>
               <div className="redes">
                 {p.redes.map((r, j) => (
-                  <a key={j} href={p.links[r]} target="_blank" rel="noopener noreferrer">
+                  <a key={j} href={(p.links as Record<string, string>)[r]} target="_blank" rel="noopener noreferrer">
                     <img 
                     src={`public/imgs/Participants/${r}.svg`} alt={r} className="icon" />
                   </a>
