@@ -48,6 +48,8 @@ const BracketsView: React.FC<BracketsViewProps> = ({ matches }) => {
   }, []);
   return (
     <div id="bracketContainer" style={{ backgroundColor: '#D9D9D9', padding: '20px', width: '100%' }}>
+      <img className='imgBracket1' src="./imgs/Bracket/PokeballDer.png" alt="" />
+      <img className='imgBracket2' src="./imgs/Bracket/Pokeballzq.png" alt="" />
       <SingleEliminationBracket
         matches={matches}
         matchComponent={Match}

@@ -14,6 +14,8 @@ const Section3 = () => {
         </div>
 
         <div className="grid-participantes">
+          <img className='poke1Participants' src="./imgs/Participants/PokeballIzq.png" alt="" />
+          <img className='poke2Participants' src="./imgs/Participants/Pokeball.png" alt="" />
           {participantes.map((p, i) => (
             <div key={i} className="card">
               <img src={p.foto} alt={p.nombre} className="card-img" />

@@ -102,6 +102,21 @@
 #bracketContainer {
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.imgBracket1{
+    position: absolute;
+    z-index: 100;
+    top: 60%;
+    right: -5%;
+}
+
+.imgBracket2{
+    position: absolute;
+    z-index: 100;
+    left: -10%;
+    top: 70%;
 }
 
 #bracketContainer>div>svg {
