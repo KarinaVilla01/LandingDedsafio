@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import BracketsView from './globals/BracketsView';
-import BracketsView2 from './CustomBrackets';
 import type { MatchType } from './globals/BracketsView';
 import '../SectionBrackets.css';
 
