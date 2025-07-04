@@ -10,7 +10,7 @@ const Section3 = () => {
       <div className='cardParticipantsSection'>
         <div className='divParticipant'>
           <h2 className="titulo">PARTICIPANTES</h2>
-          <img className='degradadoImg' src="./imgs/Participants/Degradado.png" alt="degradado" />
+          {/* <img className='degradadoImg' src="./imgs/Participants/Degradado.png" alt="degradado" /> */}
         </div>
 
         <div className="grid-participantes">

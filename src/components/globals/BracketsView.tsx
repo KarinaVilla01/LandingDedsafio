@@ -5,6 +5,8 @@ import {
   SVGViewer,
 } from '@g-loot/react-tournament-brackets';
 import React from 'react';
+import { useEffect, useState } from 'react';
+
 
 // Tipado para un participante
 type Participant = {
@@ -31,13 +33,26 @@ type BracketsViewProps = {
 };
 
 const BracketsView: React.FC<BracketsViewProps> = ({ matches }) => {
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    const updateSize = () => {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    };
+    updateSize();
+    window.addEventListener('resize', updateSize);
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
   return (
-    <div style={{ backgroundColor: '#f4f4f4', padding: '20px' }}>
+    <div id="bracketContainer" style={{ backgroundColor: '#D9D9D9', padding: '20px', width: '100%' }}>
       <SingleEliminationBracket
         matches={matches}
         matchComponent={Match}
-        svgWrapper={({ children, ...props }: { children: React.ReactNode; [key: string]: any }) => (
-          <SVGViewer width={800} height={500} {...props}>
+        svgWrapper={({ children, ...props }: { children: React.ReactNode;[key: string]: any }) => (
+          <SVGViewer  width={dimensions.width} height={dimensions.height} {...props}>
             {children}
           </SVGViewer>
         )}

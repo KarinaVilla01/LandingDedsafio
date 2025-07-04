@@ -34,12 +34,12 @@ const Section2 = () => {
         <div className="flex-1 space-y-4 text-left">
           <div className="marginCenter">
             <div className="aboutLetters">
-              <img src="public\imgs\Home\AboutEvent.png" alt="" />
+              <img src="./imgs/Home/AboutEvent.png" alt="" />
             </div>
             <h2 className="textEntrena font-bold ">
               ENTRETENIMIENTO <br />
               <span className="text-white">AL </span>
-              <span className="text-gradient">SIGUIENTE NIVEL</span>
+              <span className="textPink">SIGUIENTE NIVEL</span>
             </h2>
             <p className="text-sm text-white/80 max-w-md mx-auto lg:mx-0 spaicingNormal textPequeno">
               <span className="font-bold">DEDsafio Pokémon</span> lleva la <span className="font-bold">estrategia y el entretenimiento</span> al siguiente nivel <span className="font-bold">con uno de los juegos más querido por los gamers,</span> se convirtió en uno de <span className="font-bold">los eventos más impactantes y comentados del año.</span>
@@ -47,14 +47,14 @@ const Section2 = () => {
             <p className="spaicingNormal textPequeno">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="btn-grad mt-4">
+            <a href="#format" className="btn-grad mt-4">
               <span className="btn-text">VER MÁS</span>
               <span className="btn-icon">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -62,19 +62,16 @@ const Section2 = () => {
       {/* Contador */}
       <div className="btn-grad2 centerFlexContador oscuroContador mt-20 mb-20 w-100">
         <p className="faltan">FALTAN</p>
-        <div className="flex justify-center gap-8 text-4xl font-bold">
+        <div className="flex justify-center gap-8 text-4xl font-bold relative">
           <div className="numsContador margin-left-contador">
-            <p className="text-gradient-vertical">{String(timeLeft.months).padStart(2, '0')}</p>
-            <span className="block text-sm text-white/50 mt-2">MESES</span>
-          </div>
-          <div className="numsContador margin-left-contador">
-            <p className="text-gradient-vertical">{String(timeLeft.days).padStart(2, '0')}</p>
+            <p className="textPink2">{String(timeLeft.days).padStart(2, '0')}</p>
             <span className="block text-sm text-white/50 mt-2">DÍAS</span>
           </div>
           <div className="numsContador">
-            <p className="text-gradient-vertical">{String(timeLeft.hours).padStart(2, '0')}</p>
+            <p className="textPink2">{String(timeLeft.hours).padStart(2, '0')}</p>
             <span className="block text-sm text-white/50 mt-2">HORAS</span>
           </div>
+          <img src="./imgs/Home/Degradado2.png" className="degradado2" alt="degradado" />
         </div>
       </div>
     </section>

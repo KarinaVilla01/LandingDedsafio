@@ -43,7 +43,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -51,6 +51,7 @@
   -moz-osx-font-smoothing: grayscale;
   --pink: #D5048D;
   --blue: #0600FF;
+  --purple1: #2F2154;
 }
 
 html {
@@ -70,7 +71,7 @@ a:hover {
 body {
   margin: 0;
   font-family: 'Segoe TV', sans-serif;
-  background-color: #242424;
+  background-color: #000000;
 }
 
 h1 {
@@ -104,7 +105,7 @@ button:focus-visible {
 }
 
 .primeraSection {
-  background: url(./imgs/Home/Background1.png);
+  background: url(/imgs/Home/Background1.png);
 }
 
 .letras {
@@ -145,12 +146,16 @@ button:focus-visible {
 }
 
 #aboutEvent {
-  background: url(./imgs/bg-top-shadow2.png);
+  background: url(/imgs/bg-top-shadow2.png);
   padding-bottom: 70px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
 }
 
 .contenedorConFondos {
-  background: url(./imgs/FondoUltimosCuatro.png);
+  background: url(/imgs/FondoUltimosCuatro2.png);
   padding-bottom: 70px;
   background-position-x: center;
   background-position-y: 30%;
@@ -194,6 +199,19 @@ button:focus-visible {
   margin-bottom: 20px;
 }
 
+.textPink {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--pink);
+}
+
+.textPink2 {
+  font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 0;
+  color: var(--pink);
+}
+
 .text-gradient {
   font-weight: 700;
   font-size: 2.5rem;
@@ -234,6 +252,7 @@ button:focus-visible {
   font-size: 12px;
   font-weight: 100;
   letter-spacing: 3px;
+  z-index: 100;
 }
 
 .btn-grad {
@@ -249,7 +268,7 @@ button:focus-visible {
   color: white;
   background-color: transparent;
   background:
-    linear-gradient(#10022c, #10022c) padding-box,
+    linear-gradient(var(--purple1), var(--purple1)) padding-box,
     linear-gradient(to right, var(--pink), var(--blue)) border-box;
   cursor: pointer;
   font-size: 15px;
@@ -273,6 +292,53 @@ button:focus-visible {
     linear-gradient(to right, var(--pink), var(--blue)) border-box;
   font-size: 15px;
   gap: 12px;
+}
+
+.btn-grad3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 35px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  background:
+    linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(to right, var(--pink), var(--blue)) border-box;
+  cursor: pointer;
+  font-size: 15px;
+  gap: 12px;
+}
+
+.btn-grad-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 35px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  background:
+    linear-gradient(#030208, #030208) padding-box,
+    linear-gradient(to right, var(--pink), var(--blue)) border-box;
+  cursor: pointer;
+  font-size: 15px;
+  gap: 12px;
+  margin-top: 0!important;
+}
+
+.degradado2 {
+  position: absolute;
+  height: 50px;
+  top: 38%;
 }
 
 .with70 {
@@ -311,6 +377,20 @@ button:focus-visible {
 
 .w-5 {
   width: 25px;
+}
+
+#sponsors {
+    width: 93%;
+    padding-bottom: 70px;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.tituloSponsor{
+  font-size: 3rem; 
+  letter-spacing: 3px;
+  color: var(--pink);
+  font-weight: 800;
 }
 
 @media (prefers-color-scheme: light) {

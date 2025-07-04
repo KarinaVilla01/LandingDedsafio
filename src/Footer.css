@@ -1,0 +1,9 @@
+.flexFooter{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.redesFooter a img{
+    margin-left: 100px;
+}
