@@ -4,35 +4,35 @@
 
 @font-face {
   font-family: 'POKMNFont';
-  src: url('/fonts/PKMN-RBYGSC.ttf') format('truetype');
+  src: url(/fonts/PKMN-RBYGSC.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe TV';
-  src: url('/fonts/SegoeTV-Regular.ttf') format('truetype');
+  src: url(/fonts/SegoeTV-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe TV';
-  src: url('/fonts/SegoeTV-Italic.ttf') format('truetype');
+  src: url(/fonts/SegoeTV-Italic.ttf) format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Segoe TV';
-  src: url('/fonts/SegoeTV-Bold.ttf') format('truetype');
+  src: url(/fonts/SegoeTV-Bold.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe TV';
-  src: url('/fonts/SegoeTV-BoldItalic.ttf') format('truetype');
+  src: url(/fonts/SegoeTV-BoldItalic.ttf) format('truetype');
   font-weight: bold;
   font-style: italic;
 }
@@ -332,7 +332,7 @@ button:focus-visible {
   cursor: pointer;
   font-size: 15px;
   gap: 12px;
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
 .degradado2 {
@@ -380,17 +380,21 @@ button:focus-visible {
 }
 
 #sponsors {
-    width: 93%;
-    padding-bottom: 70px;
-    background-size: 100%;
-    margin: 0 auto;
+  width: 93%;
+  padding-bottom: 70px;
+  background-size: 100%;
+  margin: 0 auto;
 }
 
-.tituloSponsor{
-  font-size: 3rem; 
+.tituloSponsor {
+  font-size: 3rem;
   letter-spacing: 3px;
   color: var(--pink);
   font-weight: 800;
+}
+
+.showCel {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -406,4 +410,116 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+@media (max-width: 768px) {
+  .columnCel {
+    flex-direction: column;
+  }
+
+
+  .noShow {
+    display: none;
+  }
+
+  .showCel {
+    display: block;
+    width: 100%;
+  }
+
+  .showCel img {
+    width: 100%;
+  }
+
+  .textEntrena,
+  .textEntrena span {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .marginCenter {
+    width: 100%;
+    padding: 0;
+  }
+
+  .btn-grad {
+    background: linear-gradient(#020005, #090318) padding-box, linear-gradient(to right, var(--pink), var(--blue)) border-box;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .btn-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .faltan {
+    font-size: 25px !important;
+  }
+
+  .btn-grad2 {
+    gap: 0;
+    padding: 30px;
+    margin-top: 50px;
+  }
+  
+  .btn-grad3{
+    border-radius: 30px;
+    font-size: 12px;
+  }
+
+  .textPink2 {
+    font-size: 4rem;
+  }
+
+  .degradado2 {
+    width: 100%;
+    top: 22%;
+  }
+
+  .cardParticipantsSection {
+    padding: 50px 20px !important;
+  }
+
+  .titulo {
+    font-size: 2rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .contenedorConFondos {
+    background: url(/imgs/FondoUltimosCuatroCel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: min-content;
+    background-position-y: bottom;
+  }
+  .with70{
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  #sponsors{
+    padding-top: 0!important;
+    margin: 0;
+    width: 100%;
+  }
+
+  #sponsors > div.btn-grad2{
+    padding: 30px 10px;
+  }
+
+  .tituloSponsor{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .noSponsorCel{
+    display: none;
+  }
+
 }

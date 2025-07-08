@@ -22,7 +22,7 @@
   font-size: 4rem;
   letter-spacing: 10px;
   font-weight: 800;
-  color:var(--pink);
+  color: var(--pink);
   margin-bottom: 70px;
 }
 
@@ -34,13 +34,13 @@
   position: relative;
 }
 
-.poke1Participants{
+.poke1Participants {
   position: absolute;
   top: 30%;
   left: -10%;
 }
 
-.poke2Participants{
+.poke2Participants {
   position: absolute;
   top: 50%;
   right: -10%;
@@ -145,4 +145,27 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 64%;
+    margin: 0;
+    padding: 25px;
+  }
+
+  .grid-participantes {
+    width: 100%;
+    justify-items: normal;
+  }
+
+  .poke1Participants {
+    top: 15%;
+  }
+
+  .poke2Participants {
+    top: 69%;
+    right: -80%;
+  }
+
 }

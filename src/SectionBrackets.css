@@ -105,14 +105,14 @@
     position: relative;
 }
 
-.imgBracket1{
+.imgBracket1 {
     position: absolute;
     z-index: 100;
     top: 60%;
     right: -5%;
 }
 
-.imgBracket2{
+.imgBracket2 {
     position: absolute;
     z-index: 100;
     left: -10%;
@@ -168,4 +168,20 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .lineContainerBracket .tabs .tab {
+        padding: 0.6em 0.8em;
+    }
+
+    .imgBracket1 {
+        top: -62%;
+        right: -46%;
+    }
+
+    .imgBracket2 {
+        left: -40%;
+        top: 35%;
+    }
 }

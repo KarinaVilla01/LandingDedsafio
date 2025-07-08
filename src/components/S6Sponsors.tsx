@@ -13,10 +13,10 @@ const BigComponent = () => {
                     <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
                     <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
                     <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
+                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
+                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
+                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
+                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
                 </div>
                 <div className='contactUsDiv'>
                     <p>¿QUIERES SER PATROCINADOR DEL EVENTO?</p>

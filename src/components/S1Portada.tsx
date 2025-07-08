@@ -3,12 +3,11 @@ import Header from './globals/Header';
 const Section1 = () => {
   return (
     <section
-      className="relative h-screen bg-cover bg-center text-white flex flex-col items-center justify-center"
-      style={{ backgroundImage: "url('./imgs/Home/Background1.png')" }}
+      className="relative h-screen bg-cover bg-center text-white flex flex-col items-center justify-center backgoundHero"
     >
       <Header />
       <div className="text-center z-10">
-        <p className="mb-2 text-sm letras">AGOSTO 1 | TWITCH</p>
+        <p className="mb-2 text-sm letras">AGOSTO 4 | TWITCH</p>
         <img className='imgLogoHero' src="./imgs/Home/DedsafioLogo.svg" alt="logoDedsafio" />
         <div className="mt-10 animate-bounce moreLetters">DESCUBRE MÁS</div>
         <div className="animate-bounce mt-1">

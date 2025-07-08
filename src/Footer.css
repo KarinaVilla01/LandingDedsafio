@@ -7,3 +7,21 @@
 .redesFooter a img{
     margin-left: 100px;
 }
+
+@media (max-width: 768px) {
+
+    .flexFooter{
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .redesFooter a img {
+        margin-left: 0;
+    }
+
+    .redesFooter{
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

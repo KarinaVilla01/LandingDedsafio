@@ -24,17 +24,23 @@ const Section2 = () => {
 
   return (
     <section id="aboutEvent" className="pt-5 relative py-20 px-4 bg-[#0e0e1a] text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto flex lg:flex-row items-center gap-12">
+      <div className="max-w-7xl mx-auto flex lg:flex-row items-center gap-12 columnCel">
         {/* Imagen */}
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center noShow">
           <img src="./imgs/Home/Ambos.png" alt="Personajes" className="with70" />
+        </div>
+
+        {/* Imagen Cel*/}
+        <div className="flex-1 flex justify-center showCel">
+          <img src="./imgs/Home/AmbosCel.png" alt="Personajes" className="with70" />
         </div>
 
         {/* Texto */}
         <div className="flex-1 space-y-4 text-left">
           <div className="marginCenter">
             <div className="aboutLetters">
-              <img src="./imgs/Home/AboutEvent.png" alt="" />
+              <img className="noShow" src="./imgs/Home/AboutEvent.png" alt="aboutEvent" />
+              <img className="showCel" src="./imgs/Home/AboutEventCel.png" alt="aboutEvent" />
             </div>
             <h2 className="textEntrena font-bold ">
               ENTRETENIMIENTO <br />

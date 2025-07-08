@@ -3,7 +3,7 @@ const Section4 = () => {
 
     return (
         <section id="format" className="pt-5 relative py-20 px-4 text-white overflow-hidden">
-            <div className="max-w-7xl mx-auto flex lg:flex-row items-center gap-12">
+            <div className="max-w-7xl mx-auto flex lg:flex-row items-center gap-12 columnCel">
                 {/* Imagen */}
                 <div className="flex-1 flex justify-center">
                     <img src="./imgs/Formato/MegaBlaziken.png" alt="Personajes" className="with70" />
