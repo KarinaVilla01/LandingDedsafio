@@ -4,35 +4,35 @@
 
 @font-face {
   font-family: 'POKMNFont';
-  src: url(/fonts/PKMN-RBYGSC.ttf) format('truetype');
+  src: url('/fonts/PKMNRBYGSC.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe TV';
-  src: url(/fonts/SegoeTV-Regular.ttf) format('truetype');
+  src: url('/fonts/SegoeTVRegular.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe TV';
-  src: url(/fonts/SegoeTV-Italic.ttf) format('truetype');
+  src: url('/fonts/SegoeTVItalic.TTF') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Segoe TV';
-  src: url(/fonts/SegoeTV-Bold.ttf) format('truetype');
+  src: url('/fonts/SegoeTVBold.TTF') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe TV';
-  src: url(/fonts/SegoeTV-BoldItalic.ttf) format('truetype');
+  src: url('/fonts/SegoeTVBoldIt.TTF') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
@@ -113,22 +113,24 @@ button:focus-visible {
   line-height: 70px;
   letter-spacing: 10px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.5rem;
 }
 
 .imgLogoHero {
-  width: 70%;
+  width: 90%;
   margin-bottom: 10px;
 }
 
 .moreLetters {
-  margin-top: 20px;
-  font-size: 12px;
-  font-weight: bolder;
+  margin-top: 30px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .imgDown {
-  width: 40px;
+  width: 50px;
 }
 
 .iconHeaderSection {
@@ -159,7 +161,8 @@ button:focus-visible {
   padding-bottom: 70px;
   background-position-x: center;
   background-position-y: 30%;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .aboutLetters {
@@ -170,11 +173,12 @@ button:focus-visible {
 
 .aboutLetters img {
   width: 200px;
+  height: 65px;
 }
 
 .marginCenter {
   padding-left: 60px;
-  width: 650px;
+  width: 1000px;
 }
 
 .spaicingNormal {
@@ -182,7 +186,8 @@ button:focus-visible {
 }
 
 .textPequeno {
-  font-size: 12px;
+  margin-top: 30px;
+  font-size: 1.3rem;
   font-weight: 100;
   text-align: justify;
 }
@@ -192,22 +197,22 @@ button:focus-visible {
 }
 
 .textEntrena {
-  font-size: 2.5rem;
+  font-size: 5rem;
   /* ajusta según necesidad */
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   margin-bottom: 20px;
 }
 
 .textPink {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: var(--pink);
 }
 
 .textPink2 {
-  font-weight: bold;
-  font-size: 5rem;
+  font-weight: bolder;
+  font-size: 7rem;
   margin-bottom: 0;
   color: var(--pink);
 }
@@ -271,7 +276,7 @@ button:focus-visible {
     linear-gradient(var(--purple1), var(--purple1)) padding-box,
     linear-gradient(to right, var(--pink), var(--blue)) border-box;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1.2rem;
   gap: 12px;
 }
 
@@ -290,7 +295,7 @@ button:focus-visible {
   background:
     linear-gradient(#030208, #030208) padding-box,
     linear-gradient(to right, var(--pink), var(--blue)) border-box;
-  font-size: 15px;
+  font-size: 1.2rem;
   gap: 12px;
 }
 
@@ -310,7 +315,7 @@ button:focus-visible {
     linear-gradient(#000000, #000000) padding-box,
     linear-gradient(to right, var(--pink), var(--blue)) border-box;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1.2rem;
   gap: 12px;
 }
 
@@ -330,15 +335,15 @@ button:focus-visible {
     linear-gradient(#030208, #030208) padding-box,
     linear-gradient(to right, var(--pink), var(--blue)) border-box;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1.2rem;
   gap: 12px;
   margin-top: 0 !important;
 }
 
 .degradado2 {
   position: absolute;
-  height: 50px;
-  top: 38%;
+  top: 22%;
+  height: 97px;
 }
 
 .with70 {
@@ -346,7 +351,7 @@ button:focus-visible {
 }
 
 .btn-grad2 .faltan {
-  font-size: 35px;
+  font-size: 3.5rem;
   letter-spacing: 10px;
   margin-bottom: 0;
 }
@@ -387,7 +392,7 @@ button:focus-visible {
 }
 
 .tituloSponsor {
-  font-size: 3rem;
+  font-size: 6rem;
   letter-spacing: 3px;
   color: var(--pink);
   font-weight: 800;
@@ -418,6 +423,10 @@ button:focus-visible {
     flex-direction: column;
   }
 
+  .imgLogoHero {
+    width: 70%;
+    margin-bottom: 10px;
+  }
 
   .noShow {
     display: none;
@@ -465,8 +474,8 @@ button:focus-visible {
     padding: 30px;
     margin-top: 50px;
   }
-  
-  .btn-grad3{
+
+  .btn-grad3 {
     border-radius: 30px;
     font-size: 12px;
   }
@@ -497,28 +506,29 @@ button:focus-visible {
     height: min-content;
     background-position-y: bottom;
   }
-  .with70{
+
+  .with70 {
     width: 100%;
     padding-bottom: 50px;
   }
 
-  #sponsors{
-    padding-top: 0!important;
+  #sponsors {
+    padding-top: 0 !important;
     margin: 0;
     width: 100%;
   }
 
-  #sponsors > div.btn-grad2{
+  #sponsors>div.btn-grad2 {
     padding: 30px 10px;
   }
 
-  .tituloSponsor{
+  .tituloSponsor {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
   }
 
-  .noSponsorCel{
+  .noSponsorCel {
     display: none;
   }
 

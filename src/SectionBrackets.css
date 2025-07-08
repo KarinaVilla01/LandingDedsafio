@@ -11,7 +11,7 @@
 .text-brackets {
     color: var(--pink);
     text-align: center;
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 600;
     letter-spacing: 5px;
     margin-bottom: 50px;
@@ -94,7 +94,7 @@
     color: #ec4899;
     background: none;
     border: none;
-    font-size: 1rem;
+    font-size: 2rem;
     cursor: pointer;
     border-bottom: 3px solid transparent;
 }
@@ -168,6 +168,11 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
+}
+
+.lineContainerBracket .tabs .tab {
+    padding: 0rem 0.8em;
+    border-bottom-width: 8px;
 }
 
 @media (max-width: 768px) {
