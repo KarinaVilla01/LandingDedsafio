@@ -1,0 +1,153 @@
+.topBanner {
+    margin-top: 72px;
+    width: 100vw;
+}
+
+.bannerDiv {
+    background-image: url(/imgs/AboutEvent/BannerSubtitulo.png);
+    background-size: cover;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerDiv h1 {
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+
+.primerSectionAbout {
+    display: flex;
+    align-items: center;
+    margin: 30px 5%;
+}
+
+.listAbout {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.listAbout li {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.grid-clips {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    position: relative;
+}
+
+.poke1Clips {
+    position: absolute;
+    top: 20%;
+    left: -7%;
+}
+
+.poke2Clips {
+    position: absolute;
+    top: 30%;
+    right: -7%;
+}
+
+.cardAntecedentes {
+    background: white;
+    border: 2px solid #ec4899;
+    border-radius: 30px;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.clips {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .primerSectionAbout {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .grid-clips {
+        width: 100%;
+        justify-items: normal;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+    }
+
+    .cardAntecedentes {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #participantsCarrousel .cardAntecedentes{
+        width: 100%!important;
+    }
+
+    .cardAntecedentes img {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .bannerDiv {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .bannerDiv h1 {
+        font-size: 32px;
+    }
+
+    .showCel img {
+        margin-top: 30px;
+    }
+
+    .textEntretene {
+        background-color: black;
+        padding: 30px 20px;
+    }
+
+    .listAbout li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .listAbout {
+        margin-top: 10px;
+    }
+
+    .poke2Clips {
+        top: 80%;
+        right: -11%;
+        width: 200px;
+    }
+
+    .rigthCardPoke{
+        right: 0!important;
+    }
+
+    .poke1Clips {
+        top: 35%;
+        left: -16%;
+        width: 100px;
+    }
+
+    .clips {
+        margin-bottom: 10px;
+    }
+
+    .redesFooter {
+        height: 130px;
+    }
+}

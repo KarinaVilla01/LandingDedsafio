@@ -8,14 +8,14 @@ const Section1 = () => {
       <Header />
       <div className="text-center z-10">
         <p className="mb-2 text-sm letras">AGOSTO 4 | TWITCH</p>
-        <img className='imgLogoHero' src="./imgs/Home/DedsafioLogo.svg" alt="logoDedsafio" />
+        <img className='imgLogoHero' src="/LandingDedsafio/imgs/Home/DedsafioLogo.svg" alt="logoDedsafio" />
         <div className="mt-10 animate-bounce moreLetters">DESCUBRE MÁS</div>
         <div className="animate-bounce mt-1">
           <a
             href="#aboutEvent"
             className="transition animate-bounce"
           >
-            <img src="./imgs/ic_circle.png" className="imgDown" alt="descubreMas" />
+            <img src="/LandingDedsafio/imgs/ic_circle.png" className="imgDown" alt="descubreMas" />
           </a>
         </div>
       </div>

@@ -117,7 +117,7 @@ button:focus-visible {
 }
 
 .imgLogoHero {
-  width: 90%;
+  width: 80%;
   margin-bottom: 10px;
 }
 
@@ -141,6 +141,7 @@ button:focus-visible {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .iconHeaderSection:hover {
@@ -187,8 +188,8 @@ button:focus-visible {
 
 .textPequeno {
   margin-top: 30px;
-  font-size: 1.3rem;
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: normal;
   text-align: justify;
 }
 
@@ -197,8 +198,7 @@ button:focus-visible {
 }
 
 .textEntrena {
-  font-size: 5rem;
-  /* ajusta según necesidad */
+  font-size: 60px;
   font-weight: bold;
   letter-spacing: 4px;
   margin-bottom: 20px;
@@ -206,7 +206,7 @@ button:focus-visible {
 
 .textPink {
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 60px;
   color: var(--pink);
 }
 
@@ -402,6 +402,12 @@ button:focus-visible {
   display: none;
 }
 
+.divParticipant {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -443,7 +449,9 @@ button:focus-visible {
 
   .textEntrena,
   .textEntrena span {
-    font-size: 1.5rem;
+    margin-top: 30px;
+    font-size: 32px;
+    letter-spacing: 3px;
     line-height: 2.5rem;
   }
 
@@ -497,6 +505,8 @@ button:focus-visible {
     font-size: 2rem !important;
     letter-spacing: 1px !important;
     margin-bottom: 30px !important;
+    text-transform: uppercase !important;
+    text-align: center;
   }
 
   .contenedorConFondos {
@@ -530,6 +540,14 @@ button:focus-visible {
 
   .noSponsorCel {
     display: none;
+  }
+
+  .textPequeno {
+    font-size: 14px;
+  }
+
+  .moreLetters {
+    font-size: 12px;
   }
 
 }

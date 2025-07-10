@@ -7,16 +7,16 @@ const BigComponent = () => {
             <div className="btn-grad2 centerFlexContador oscuroContador mt-20 mb-20 w-100">
                 <p className="tituloSponsor">NUESTROS SPONSORS</p>
                 <div className="sponsors-grid">
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
-                    <img src="./imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
+                    <img src="/LandingDedsafio/imgs/Globals/PokeballSponsor.png" className="sponsor-img noSponsorCel" alt="logoASponsor" />
                 </div>
                 <div className='contactUsDiv'>
                     <p>¿QUIERES SER PATROCINADOR DEL EVENTO?</p>

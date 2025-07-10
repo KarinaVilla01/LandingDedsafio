@@ -234,7 +234,7 @@ const SectionBrackets = () => {
                         </button>
                     ))}
                 </div>
-                <img src="./imgs/Bracket/Line 2.png" alt="" />
+                <img src="/LandingDedsafio/imgs/Bracket/Line 2.png" alt="" />
             </div>
             {/* <BracketsView2 /> */}
             <BracketsView matches={ligas[ligaActiva]} />

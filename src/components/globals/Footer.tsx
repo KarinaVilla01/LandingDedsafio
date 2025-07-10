@@ -7,13 +7,13 @@ const Footer = () => (
     </div>
     <div className='redesFooter'>
       <a href="https://x.com/dedreviil" target="_blank" rel="noopener noreferrer">
-        <img src="./imgs/Participants/Twitter.svg" alt="" />
+        <img src="/LandingDedsafio/imgs/Participants/Twitter.svg" alt="" />
       </a>
       <a href="https://www.twitch.tv/dedsafio/" target="_blank" rel="noopener noreferrer">
-        <img src="./imgs/Participants/Twitch.svg" alt="" />
+        <img src="/LandingDedsafio/imgs/Participants/Twitch.svg" alt="" />
       </a>
       <a href="https://www.youtube.com/c/deDOS" target="_blank" rel="noopener noreferrer">
-        <img src="./imgs/Participants/Youtube.svg" alt="" />
+        <img src="/LandingDedsafio/imgs/Participants/Youtube.svg" alt="" />
       </a>
     </div>
   </footer>

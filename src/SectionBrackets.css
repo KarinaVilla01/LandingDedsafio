@@ -176,10 +176,6 @@
 }
 
 @media (max-width: 768px) {
-    .lineContainerBracket .tabs .tab {
-        padding: 0.6em 0.8em;
-    }
-
     .imgBracket1 {
         top: -62%;
         right: -46%;
@@ -188,5 +184,19 @@
     .imgBracket2 {
         left: -40%;
         top: 35%;
+    }
+
+    .text-brackets {
+        font-size: 35px;
+    }
+
+    .lineContainerBracket .tabs .tab {
+        padding: 0;
+        font-size: 14px;
+        border-bottom-width: 5px;
+    }
+
+    .lineContainerBracket img {
+        top: 63%;
     }
 }

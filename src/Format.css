@@ -1,0 +1,95 @@
+.topBanner {
+    margin-top: 72px;
+    width: 100vw;
+}
+
+.bannerDiv {
+    background-image: url(/imgs/AboutEvent/BannerSubtitulo.png);
+    background-size: cover;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerDiv h1 {
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+
+.poke1Clips {
+    position: absolute;
+    top: 20%;
+    left: -7%;
+}
+
+.poke2Clips {
+    position: absolute;
+    top: 30%;
+    right: -7%;
+}
+
+.cardAntecedentes {
+    background: white;
+    border: 2px solid #ec4899;
+    border-radius: 30px;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.brackets-section2 {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgba(58, 58, 58, 0.6);
+    width: 95%;
+    height: 100VH;
+    margin: 100px auto 50px;
+    border-radius: 20px;
+}
+
+.bracket-box {
+    background: #e5e5e5;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .bannerDiv {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .bannerDiv h1 {
+        font-size: 32px;
+    }
+
+    .poke2Clips {
+        top: 80%;
+        right: -11%;
+        width: 200px;
+    }
+
+    .poke1Clips {
+        top: 35%;
+        left: -16%;
+        width: 100px;
+    }
+
+    .brackets-section2{
+        margin: 30px auto;
+        height: 500px;
+    }
+}

@@ -11,12 +11,12 @@ const Section3 = () => {
       <div className='cardParticipantsSection'>
         <div className='divParticipant'>
           <h2 className="titulo">PARTICIPANTES</h2>
-          {/* <img className='degradadoImg' src="./imgs/Participants/Degradado.png" alt="degradado" /> */}
+          {/* <img className='degradadoImg' src="/LandingDedsafio/imgs/Participants/Degradado.png" alt="degradado" /> */}
         </div>
 
         <div className="grid-participantes">
-          <img className='poke1Participants' src="./imgs/Participants/PokeballIzq.png" alt="" />
-          <img className='poke2Participants' src="./imgs/Participants/Pokeball.png" alt="" />
+          <img className='poke1Participants' src="/LandingDedsafio/imgs/Participants/PokeballIzq.png" alt="" />
+          <img className='poke2Participants' src="/LandingDedsafio/imgs/Participants/Pokeball.png" alt="" />
           {participantes
             .slice(0, isMobile ? 3 : participantes.length)
             .map((p, i) => (
@@ -28,7 +28,7 @@ const Section3 = () => {
                   {p.redes.map((r, j) => (
                     <a key={j} href={(p.links as Record<string, string>)[r]} target="_blank" rel="noopener noreferrer">
                       <img
-                        src={`./imgs/Participants/${r.charAt(0).toUpperCase() + r.slice(1)}.svg`}
+                        src={`/LandingDedsafio/imgs/Participants/${r.charAt(0).toUpperCase() + r.slice(1)}.svg`}
                         alt={r}
                         className="icon"
                       />
@@ -39,9 +39,9 @@ const Section3 = () => {
             ))}
         </div>
 
-        <button className="btn-vermas">
+        <a href='/LandingDedsafio/participants' className="btn-vermas">
           VER MÁS <span className="flecha">➜</span>
-        </button>
+        </a>
       </div>
     </section>
   );

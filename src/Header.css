@@ -157,6 +157,11 @@
     background-image: url(/imgs/Home/Background1.png);
 }
 
+.backgoundHeroAbout{
+    background-image: url(/imgs/AboutEvent/bg-espacial.png);
+    height: auto;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .hamburger {
@@ -176,6 +181,7 @@
     }
 
     .letras {
+        font-size: 16px;
         letter-spacing: 5px;
     }
 

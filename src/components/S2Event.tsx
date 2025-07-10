@@ -27,20 +27,20 @@ const Section2 = () => {
       <div className="max-w-7xl mx-auto flex lg:flex-row items-center gap-12 columnCel">
         {/* Imagen */}
         <div className="flex-1 flex justify-center noShow">
-          <img src="./imgs/Home/Ambos.png" alt="Personajes" className="with70" />
+          <img src="/LandingDedsafio/imgs/Home/Ambos.png" alt="Personajes" className="with70" />
         </div>
 
         {/* Imagen Cel*/}
         <div className="flex-1 flex justify-center showCel">
-          <img src="./imgs/Home/AmbosCel.png" alt="Personajes" className="with70" />
+          <img src="/LandingDedsafio/imgs/Home/AmbosCel.png" alt="Personajes" className="with70" />
         </div>
 
         {/* Texto */}
         <div className="flex-1 space-y-4 text-left">
           <div className="marginCenter">
             <div className="aboutLetters">
-              <img className="noShow" src="./imgs/Home/AboutEvent.png" alt="aboutEvent" />
-              <img className="showCel" src="./imgs/Home/AboutEventCel.png" alt="aboutEvent" />
+              <img className="noShow" src="/LandingDedsafio/imgs/Home/AboutEvent.png" alt="aboutEvent" />
+              <img className="showCel" src="/LandingDedsafio/imgs/Home/AboutEventCel.png" alt="aboutEvent" />
             </div>
             <h2 className="textEntrena font-bold ">
               ENTRETENIMIENTO <br />
@@ -53,7 +53,7 @@ const Section2 = () => {
             <p className="spaicingNormal textPequeno">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href="#format" className="btn-grad mt-4">
+            <a href="/LandingDedsafio/aboutEvent" className="btn-grad mt-4">
               <span className="btn-text">VER MÁS</span>
               <span className="btn-icon">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
@@ -77,7 +77,7 @@ const Section2 = () => {
             <p className="textPink2">{String(timeLeft.hours).padStart(2, '0')}</p>
             <span className="block text-sm text-white/50 mt-2">HORAS</span>
           </div>
-          <img src="./imgs/Home/Degradado2.png" className="degradado2" alt="degradado" />
+          <img src="/LandingDedsafio/imgs/Home/Degradado2.png" className="degradado2" alt="degradado" />
         </div>
       </div>
     </section>

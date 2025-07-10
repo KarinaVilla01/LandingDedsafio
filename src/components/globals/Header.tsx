@@ -1,18 +1,32 @@
 import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import '../../Header.css';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLinkClick = () => {
-    setMenuOpen(false); // Cierra el menú al hacer clic en un link
+    setMenuOpen(false);
+  };
+
+  const handleNavClick = (targetId: string) => {
+    if (location.pathname !== "/") {
+      navigate(`/#${targetId}`);
+    } else {
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
 
   return (
     <header className="header">
       <div className={`logo ${menuOpen ? 'active' : ''}`}>
         <a href="#">
-          <img src="./imgs/Globals/LogoFavicon.png" alt="logo-Home" />
+          <img src="/LandingDedsafio/imgs/Globals/LogoFavicon.png" alt="logo-Home" />
         </a>
       </div>
 
@@ -29,12 +43,12 @@ const Header = () => {
       </label>
 
       <nav className="space-x-6 menuGrandeOculto">
-        <a href="#" className="iconHeaderSection">Inicio</a>
-        <a href="#aboutEvent" className="iconHeaderSection">Sobre el evento</a>
-        <a href="#participants" className="iconHeaderSection">Participantes</a>
-        <a href="#format" className="iconHeaderSection">Formato</a>
-        <a href="#bracket" className="iconHeaderSection">Bracket</a>
-        <a href="#sponsors" className="iconHeaderSection">Patrocinadores</a>
+        <a className="iconHeaderSection" onClick={() => navigate('/')}>Inicio</a>                        
+        <a className="iconHeaderSection" onClick={() => handleNavClick('aboutEvent')}>Sobre el evento</a>
+        <a className="iconHeaderSection" onClick={() => handleNavClick('participants')}>Participantes</a>
+        <a className="iconHeaderSection" onClick={() => handleNavClick('format')}>Formato</a>
+        <a className="iconHeaderSection" onClick={() => handleNavClick('bracket')}>Bracket</a>
+        <a className="iconHeaderSection" onClick={() => handleNavClick('sponsors')}>Patrocinadores</a>
       </nav>
 
 
@@ -43,18 +57,18 @@ const Header = () => {
       <nav className={`navHamb ${menuOpen ? 'active' : ''}`}>
         <h5 className='textDedMenu'>DEDSAFIO POKEMON</h5>
         {[
-          { href: '#', label: 'Inicio' },
-          { href: '#aboutEvent', label: 'Sobre el evento' },
-          { href: '#participants', label: 'Participantes' },
-          { href: '#format', label: 'Formato' },
-          { href: '#bracket', label: 'Bracket' },
-          { href: '#sponsors', label: 'Patrocinadores' }
+          { href: '/LandingDedsafio/#', label: 'Inicio' },
+          { href: '/LandingDedsafio/#aboutEvent', label: 'Sobre el evento' },
+          { href: '/LandingDedsafio/#participants', label: 'Participantes' },
+          { href: '/LandingDedsafio/#format', label: 'Formato' },
+          { href: '/LandingDedsafio/#bracket', label: 'Bracket' },
+          { href: '/LandingDedsafio/#sponsors', label: 'Patrocinadores' }
         ].map((link) => (
           <a className='divElemMenu' key={link.href} href={link.href}
             onClick={handleLinkClick}>
             {link.label}
             <div className='flechaDerechaDiv'>
-              <img src="./imgs/Globals/FlechaDer.svg" alt="" />
+              <img src="/LandingDedsafio/imgs/Globals/FlechaDer.svg" alt="" />
             </div>
           </a>
         ))}
